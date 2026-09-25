@@ -46,7 +46,7 @@ function WorkoutDetailContent({ id }: { id: string }) {
       } catch (err: any) {
         console.error("Error fetching detail:", err);
         setError(err.message || "Failed to load workout details");
-      } font-medium {
+      } finally {
         setLoading(false);
       }
     }
