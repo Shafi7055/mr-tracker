@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" fill="none">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ccff00" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#ccff00" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="metal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a3245"/>
+      <stop offset="50%" stop-color="#121722"/>
+      <stop offset="100%" stop-color="#0a0d14"/>
+    </linearGradient>
+    <linearGradient id="cushion" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff4500"/>
+      <stop offset="100%" stop-color="#d02c00"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background glow -->
+  <circle cx="250" cy="250" r="220" fill="url(#glow)"/>
+
+  <!-- Machine Base -->
+  <path d="M100 420 L400 420 L440 450 L60 450 Z" fill="url(#metal)" stroke="#232b3b" stroke-width="2"/>
+  <rect x="120" y="440" width="30" height="15" rx="4" fill="#111"/>
+  <rect x="350" y="440" width="30" height="15" rx="4" fill="#111"/>
+
+  <!-- Frame support structure -->
+  <path d="M150 420 L220 250 L270 250 L360 420 Z" fill="url(#metal)" stroke="#313d54" stroke-width="2"/>
+  <path d="M220 250 L180 180 L290 180 Z" fill="url(#metal)"/>
+
+  <!-- Red Cushions (Arm Rest & Seat) -->
+  <rect x="170" y="160" width="160" height="40" rx="12" fill="url(#cushion)" transform="rotate(-15 250 180)" stroke="#ff6b35" stroke-width="2"/>
+  <rect x="290" y="270" width="110" height="30" rx="8" fill="url(#cushion)" stroke="#ff6b35" stroke-width="2"/>
+
+  <!-- Pulley System & Handles -->
+  <path d="M200 190 Q 170 220 180 300 L 220 330" fill="none" stroke="#e2e8f0" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="180" cy="300" r="10" fill="#ccff00"/>
+
+  <!-- Handle Grip -->
+  <rect x="150" y="150" width="40" height="12" rx="6" fill="#ccff00"/>
+  <rect x="210" y="140" width="40" height="12" rx="6" fill="#ccff00"/>
+
+  <!-- Anatomical Silhouette Overlay -->
+  <g opacity="0.85">
+    <!-- Torso & Arms -->
+    <path d="M250 120 C 230 140 210 160 200 190 L 250 200 C 270 180 290 150 280 120 Z" fill="#94a3b8"/>
+    <circle cx="270" cy="90" r="30" fill="#cbd5e1"/>
+    <!-- Biceps highlighted -->
+    <ellipse cx="230" cy="165" rx="18" ry="12" fill="#ff6b35" transform="rotate(-20 230 165)"/>
+    <ellipse cx="260" cy="180" rx="18" ry="12" fill="#ff6b35" transform="rotate(-10 260 180)"/>
+  </g>
+</svg>
