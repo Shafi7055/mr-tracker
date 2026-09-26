@@ -75,7 +75,7 @@ export function Hero() {
               <div className="absolute inset-0 border border-[#ccff00]/20 rounded-3xl group-hover:border-[#ccff00]/40 transition-colors" />
 
               <Image
-                src="/images/hero-machine.svg"
+                src="/images/banner.png"
                 alt="Gym Preacher Curl Machine Visual"
                 width={400}
                 height={400}

@@ -10,7 +10,7 @@ export function WorkoutCard({ workout }: { workout: Workout }) {
   const [imgError, setImgError] = useState(false);
 
   // Fallback visual illustration if external remote image fails
-  const fallbackImg = "/images/hero-machine.svg";
+  const fallbackImg = "/images/banner.png";
 
   return (
     <Link

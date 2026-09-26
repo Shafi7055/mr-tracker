@@ -168,7 +168,7 @@ function MyPlanContent() {
                     <div className="flex items-center gap-4">
                       <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-xl bg-[#090c10] overflow-hidden shrink-0 border border-[#1e2636]">
                         <Image
-                          src={workout.image || "/images/hero-machine.svg"}
+                          src={workout.image || "/images/banner.png"}
                           alt={workout.name}
                           fill
                           sizes="96px"

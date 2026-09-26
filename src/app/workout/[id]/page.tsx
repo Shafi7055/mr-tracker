@@ -30,7 +30,7 @@ function WorkoutDetailContent({ id }: { id: string }) {
   const [error, setError] = useState<string | null>(null);
   const [imgError, setImgError] = useState(false);
 
-  const fallbackImg = "/images/hero-machine.svg";
+  const fallbackImg = "/images/banner.png";
 
   useEffect(() => {
     async function fetchWorkoutDetail() {
